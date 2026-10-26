@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a feature or improvement.
+title: "feature: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What cannot you do today, and who is affected?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the smallest useful change and how it would work.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and data impact
+      description: Note API, schema, migration, privacy, or offline implications if relevant.
