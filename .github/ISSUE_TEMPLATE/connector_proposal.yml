@@ -1,0 +1,34 @@
+name: Connector proposal
+description: Propose an import or sync integration.
+title: "connector: "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source service or file format
+    validations:
+      required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: Supported access method
+      description: Link to official export/API docs and describe required authorization. Note any terms or rate limits.
+    validations:
+      required: true
+  - type: textarea
+    id: records
+    attributes:
+      label: Records and provenance
+      description: What is imported? Include source IDs, event timestamps, edits/deletes, attachments, and attribution.
+    validations:
+      required: true
+  - type: textarea
+    id: sync
+    attributes:
+      label: Sync and failure handling
+      description: Describe cursor/checkpoint, idempotency, retries, backfill, and test fixtures.
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and deployment
+      description: Explain credential storage, permissions, local/cloud calls, and deletion behavior. Use synthetic examples only.
